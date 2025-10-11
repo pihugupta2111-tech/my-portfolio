@@ -2,14 +2,43 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+// ✅ Correct imports (valid variable names)
+import img1 from "../../Assets/Projects/1.jpeg";
+import img2 from "../../Assets/Projects/2.jpeg";
+import img3 from "../../Assets/Projects/3.jpeg";
+import img4 from "../../Assets/Projects/4.jpeg";
+import img5 from "../../Assets/Projects/5.jpeg";
+import img6 from "../../Assets/Projects/6.jpeg";
+import img7 from "../../Assets/Projects/7.jpeg";
+import img8 from "../../Assets/Projects/8.jpeg";
+import img9 from "../../Assets/Projects/9.jpeg";
+import img10 from "../../Assets/Projects/10.jpeg";
+import img11 from "../../Assets/Projects/11.jpeg";
+import img12 from "../../Assets/Projects/12.jpeg";
+import img13 from "../../Assets/Projects/13.jpeg";
+import img14 from "../../Assets/Projects/14.jpeg";
+import img15 from "../../Assets/Projects/15.jpeg";
 
 function Projects() {
+  const projects = [
+    { img: img1, title: "Chatify", desc: "Personal Chat Room or Workspace built with React.js, Material-UI, and Firebase. Supports realtime messaging, image sharing, and reactions." },
+    { img: img2, title: "Bits-0f-C0de", desc: "A personal blog built with Next.js and Tailwind CSS. Renders markdown files dynamically with dark mode support." },
+    { img: img3, title: "Editor.io", desc: "An online HTML/CSS/JS and markdown editor with live preview and autosave using Local Storage." },
+    { img: img4, title: "Plant AI", desc: "CNN image classifier for plant disease detection using PyTorch and ResNet34 with 98% accuracy." },
+    { img: img5, title: "AI For Social Good", desc: "NLP project detecting suicide-related posts to help prevent self-harm using text classification." },
+    { img: img6, title: "Emotion Detection", desc: "CNN model using FER-2013 dataset to detect human emotions. Integrated with OpenCV for live face recognition." },
+    { img: img7, title: "Portfolio Website", desc: "A personal portfolio built with React.js and Bootstrap." },
+    { img: img8, title: "Weather App", desc: "Real-time weather updates using OpenWeather API and responsive UI." },
+    { img: img9, title: "To-Do App", desc: "Simple task manager built using React Hooks and LocalStorage." },
+    { img: img10, title: "CTF Platform", desc: "Capture The Flag web app for cybersecurity challenges." },
+    { img: img11, title: "E-commerce Store", desc: "Full-stack MERN e-commerce platform with cart and payment." },
+    { img: img12, title: "IoT Irrigation System", desc: "Smart irrigation control using IoT sensors and ML." },
+    { img: img13, title: "Student Management System", desc: "Manage students, attendance, and reports using MERN." },
+    { img: img14, title: "AI Chatbot", desc: "Semantic chatbot using Gemini API and local data search." },
+    { img: img15, title: "Network Visualizer", desc: "Interactive network topology viewer built with D3.js." },
+  ];
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -21,72 +50,15 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          {projects.map((proj, index) => (
+            <Col md={4} className="project-card" key={index}>
+              <ProjectCard
+                imgPath={proj.img}
+                // title={proj.title}
+                // description={proj.desc}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>

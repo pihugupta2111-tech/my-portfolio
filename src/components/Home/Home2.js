@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/guptas.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,42 +19,40 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
+              I fell in love with Graphic Design and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
               <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I’m fluent in the visual language of creativity, working
+              confidently with tools like
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  Adobe Photoshop, Illustrator, InDesign, and CorelDraw .
                 </b>
               </i>
-              &nbsp; like
+              <br />
+              <br />
+              My fields of interest include creating &nbsp;
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple">
+                  bold visual identities, print designs, digital illustrations,
+                </b>{" "}
+                and everything in between—from posters and packaging to{" "}
+                <b className="purple">
+                  social media creatives and brand assets.
+                </b>
               </i>
+              <br />
+              <br />
+              Whenever possible, I pour my passion into developing eye-catching,
+              meaningful designs that tell stories, spark emotion, and leave a
+              lasting impression.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid rounded-image" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -67,27 +65,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/pooja-gupta-2375842a5"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +75,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/pihugupta29_?igsh=MXVtZDFoNTYzenJpcQ=="
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -109,7 +87,20 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+
+      {/* Inline CSS inside component */}
+      <style jsx="true">{`
+        .rounded-image {
+          border-radius: 50%;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          border: 2px solid #ffffff10;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+      `}</style>
     </Container>
   );
 }
+
 export default Home2;
