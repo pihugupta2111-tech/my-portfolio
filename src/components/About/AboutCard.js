@@ -11,7 +11,8 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Pooja Lalit Gupta </span>
             from <span className="purple"> Mumbai, India.</span>
             <br />
-            I am currently pursuing as a MBA Digital Marketing at AMITY UNIVERSITY Noida, UP.
+            I am currently pursuing MBA in Digital Marketing at AMITY
+            UNIVERSITY, Noida, UP.
             <br />
             <br />
             <br />
@@ -22,7 +23,7 @@ function AboutCard() {
               <ImPointRight /> Art Painting
             </li>
             <li className="about-activity">
-              <ImPointRight /> Reading Art Books
+              <ImPointRight /> Making clay idols
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling

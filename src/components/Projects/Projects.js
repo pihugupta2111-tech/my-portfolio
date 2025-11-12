@@ -22,21 +22,81 @@ import img15 from "../../Assets/Projects/15.jpeg";
 
 function Projects() {
   const projects = [
-    { img: img1, title: "Chatify", desc: "Personal Chat Room or Workspace built with React.js, Material-UI, and Firebase. Supports realtime messaging, image sharing, and reactions." },
-    { img: img2, title: "Bits-0f-C0de", desc: "A personal blog built with Next.js and Tailwind CSS. Renders markdown files dynamically with dark mode support." },
-    { img: img3, title: "Editor.io", desc: "An online HTML/CSS/JS and markdown editor with live preview and autosave using Local Storage." },
-    { img: img4, title: "Plant AI", desc: "CNN image classifier for plant disease detection using PyTorch and ResNet34 with 98% accuracy." },
-    { img: img5, title: "AI For Social Good", desc: "NLP project detecting suicide-related posts to help prevent self-harm using text classification." },
-    { img: img6, title: "Emotion Detection", desc: "CNN model using FER-2013 dataset to detect human emotions. Integrated with OpenCV for live face recognition." },
-    { img: img7, title: "Portfolio Website", desc: "A personal portfolio built with React.js and Bootstrap." },
-    { img: img8, title: "Weather App", desc: "Real-time weather updates using OpenWeather API and responsive UI." },
-    { img: img9, title: "To-Do App", desc: "Simple task manager built using React Hooks and LocalStorage." },
-    { img: img10, title: "CTF Platform", desc: "Capture The Flag web app for cybersecurity challenges." },
-    { img: img11, title: "E-commerce Store", desc: "Full-stack MERN e-commerce platform with cart and payment." },
-    { img: img12, title: "IoT Irrigation System", desc: "Smart irrigation control using IoT sensors and ML." },
-    { img: img13, title: "Student Management System", desc: "Manage students, attendance, and reports using MERN." },
-    { img: img14, title: "AI Chatbot", desc: "Semantic chatbot using Gemini API and local data search." },
-    { img: img15, title: "Network Visualizer", desc: "Interactive network topology viewer built with D3.js." },
+    {
+      img: img12,
+      title: "IoT Irrigation System",
+      desc: "Smart irrigation control using IoT sensors and ML.",
+    },
+    {
+      img: img11,
+      title: "E-commerce Store",
+      desc: "Full-stack MERN e-commerce platform with cart and payment.",
+    },
+    {
+      img: img13,
+      title: "Student Management System",
+      desc: "Manage students, attendance, and reports using MERN.",
+    },
+    {
+      img: img10,
+      title: "CTF Platform",
+      desc: "Capture The Flag web app for cybersecurity challenges.",
+    },
+    {
+      img: img15,
+      title: "Network Visualizer",
+      desc: "Interactive network topology viewer built with D3.js.",
+    },
+    {
+      img: img9,
+      title: "To-Do App",
+      desc: "Simple task manager built using React Hooks and LocalStorage.",
+    },
+    {
+      img: img7,
+      title: "Portfolio Website",
+      desc: "A personal portfolio built with React.js and Bootstrap.",
+    },
+    {
+      img: img1,
+      title: "Chatify",
+      desc: "Personal Chat Room or Workspace built with React.js, Material-UI, and Firebase. Supports realtime messaging, image sharing, and reactions.",
+    },
+    {
+      img: img3,
+      title: "Editor.io",
+      desc: "An online HTML/CSS/JS and markdown editor with live preview and autosave using Local Storage.",
+    },
+    {
+      img: img4,
+      title: "Plant AI",
+      desc: "CNN image classifier for plant disease detection using PyTorch and ResNet34 with 98% accuracy.",
+    },
+    {
+      img: img5,
+      title: "AI For Social Good",
+      desc: "NLP project detecting suicide-related posts to help prevent self-harm using text classification.",
+    },
+    {
+      img: img14,
+      title: "AI Chatbot",
+      desc: "Semantic chatbot using Gemini API and local data search.",
+    },
+    {
+      img: img6,
+      title: "Emotion Detection",
+      desc: "CNN model using FER-2013 dataset to detect human emotions. Integrated with OpenCV for live face recognition.",
+    },
+    {
+      img: img2,
+      title: "Bits-0f-C0de",
+      desc: "A personal blog built with Next.js and Tailwind CSS. Renders markdown files dynamically with dark mode support.",
+    },
+    {
+      img: img8,
+      title: "Weather App",
+      desc: "Real-time weather updates using OpenWeather API and responsive UI.",
+    },
   ];
 
   return (
