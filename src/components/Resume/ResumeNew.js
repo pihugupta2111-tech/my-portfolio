@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 
-const resumeLink = "/Pooja Lalit Gupta Resume.pdf"; // Place inside 'public'
+const resumeLink = "/Pooja_Lalit_Gupta_Resume.pdf"; // Place inside 'public'
 
 function ResumeNew() {
   const [width, setWidth] = useState(window.innerWidth);
